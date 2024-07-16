@@ -1,0 +1,76 @@
+@use '@carbon/react';
+@use '@carbon/type';
+
+@include type.reset();
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 4rem;
+}
+
+@media print {
+  html {
+    font-size: 11px;
+  }
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cds--inline-notification.cds--inline-notification {
+  max-inline-size: 100%;
+  width: 100%;
+}
+
+.resume {
+  @include type.type-style('body-02');
+
+  align-items: end;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  justify-content: center;
+  padding-top: 1rem;
+  position: fixed;
+  row-gap: 1rem;
+
+  header { padding-bottom: 2rem; }
+  hgroup { flex-basis: 100%; }
+  h1, h2, h4 { @include type.type-style('body-02'); }
+  h3 { @include type.type-style('heading-02'); }
+ 
+  .split {
+    @include type.type-style('body-02');
+
+    column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    p { @include type.type-style('body-02'); }
+  }
+
+  iframe {
+    flex-grow: 1;
+    width: 100%;
+  }
+}
+
+.scroll-region {
+  max-width: 1200px;
+  overflow-y: auto;
+  padding: 4rem;
+}
+
+.dismiss {
+  // inset: 24px 24px auto auto;
+  margin-right: 1rem;
+  // position: absolute;
+}
