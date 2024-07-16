@@ -6,7 +6,7 @@
 $ git clone https://github.com/brandondurham/simple-closure.git
 $ cd simple-closure
 $ npm i
-$ npm run dev
+$ npm run start
 ```
 
 This will start an Express server (which is used as a simple api for retrieving LinkedIn profile information)

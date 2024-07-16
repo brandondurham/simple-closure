@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "client": "vite",
-    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "start": "concurrently -k \"npm run server\" \"npm run client\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "server": "nodemon src/server/app.js"
   },
